@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bag-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.bag-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bag-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.bag-item h2 {
+    margin: 15px 0;
+}
+
+.bag-item p {
+    color: #555;
+}
+
+.bag-item .buy-now {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bag-item .buy-now:hover {
+    background-color: #218838;
+}
+
+.bag-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .bag-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bag-item {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Bag Collection</h1>
+    </header>
+    <section class="bag-container">
+        <div class="bag-item">
+            <img src="kurti1.lnk" alt="Stylish Bag">
+            <h2>Stylish Bag</h2>
+            <p>Elegant and versatile bag perfect for any occasion.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="bag-item">
+            <img src="kurti2.jpg" alt="Casual Bag">
+            <h2>Casual Bag</h2>
+            <p>Comfortable and spacious bag for everyday use.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="bag-item">
+            <img src="kurti3.jpg" alt="Luxury Bag">
+            <h2>Luxury Bag</h2>
+            <p>Premium leather bag with exquisite craftsmanship.</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </section>
+</body>
+</html>
